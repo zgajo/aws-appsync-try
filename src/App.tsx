@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { CreateAuctionForm } from "./CreateAuctionForm";
+import { Auctions } from "./Auctions";
 
 class App extends Component {
   render() {
-    return <CreateAuctionForm />;
+    return (
+      <div className="App">
+        <CreateAuctionForm />
+        <Auctions />
+      </div>
+    );
   }
 }
 
